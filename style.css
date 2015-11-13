@@ -1,0 +1,468 @@
+/*  
+Theme Name: Tumbled
+Theme URI: http://davinian.com/wordpress-theme-tumbled
+Description: A simple single column theme for Wordpress. Loosely based on the popular Block theme for <a href="http://tumblr.com">Tumblr</a>.
+Version: 0.2 Beta
+Author: Davinian
+Author URI: http://davinian.com/
+
+	Theme designed by Davinian http://davinian.com/
+	The CSS, XHTML and design is released under GPL:
+	http://www.opensource.org/licenses/gpl-license.php
+*/
+
+/* Baisc Stuff */
+
+body {
+	color: #;
+	margin: 30px;
+	background-color: #666;
+	font-family: 'Lucida Grande', Helvetica, sans-serif;
+	}
+            
+#content {
+	width: 570px;
+	margin: auto;
+	padding: 35px;
+	background-color: #fff;
+	}
+
+.entry {
+	margin-bottom: 50px;
+}
+
+a {
+	color: #ff9900;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+h1 {
+	padding: 0px;
+	margin: 0px;
+	font: Normal 30px Helvetica, sans-serif;
+	line-height: 33px;
+	}
+            
+#header h1 a {
+	color: #fff;
+	text-decoration: none;
+	}
+
+#header {
+	background-color: #4AADF0;
+	margin: -20px -20px 30px -20px;
+	padding: 20px 25px;
+	}
+
+#header h1 a:hover {
+	color: #094E7C;
+	text-decoration: none;
+	}
+
+#description {
+	font-size: 15px;
+	margin-top: 10px;
+	color: #094E7C;
+	text-align: justify;
+	margin-bottom: 10px;
+}
+            
+#description a {
+	color: #094E7C;
+	}
+
+/* Post Stuff */
+
+.date {
+	font: Normal 16px Helvetica, sans-serif;
+	color: #666;
+	line-height: 32px;
+	height: 28px;
+	padding-top: 7px;
+	background: #fff url('images/stripes.gif') top repeat-x;
+	border-bottom: dotted 1px #bbb;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+	}
+
+.post {
+	font-size: 12px;
+	line-height: 17px;
+	margin-bottom: 100px;
+}
+
+.post h2 {
+	font-weight: Normal;
+	font-size: 20px;
+	color: #222;
+	margin: 0px 0px 10px 0px;
+	}
+	
+.post h2 a {
+	color: #222;
+	text-decoration: none;
+	}
+
+.post .link {
+	font: Bold 30px Helvetica, sans-serif;
+	letter-spacing: -1px;
+	color: #ff9900;
+	text-decoration: none;
+	border-bottom: dotted 1px #ff9900;
+	line-height: 36px;
+	}
+
+.post .link .description {
+	font-weight: normal;
+	font-size: 14px;
+	margin-top: 5px;
+	}
+
+.post .permalink {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	display: none;
+	font-weight: bold;
+	}
+
+.post:hover .permalink {
+	display: block;
+	}
+
+.post .permalink a {
+	text-decoration: none;
+	}
+
+.post blockquote {
+	margin: 20px 0;
+	padding: 0 20px 0 50px;
+	background: url('images/quote.png') no-repeat 20px 0;
+	border: none;
+	font-size: 28px;
+	color: #333;
+	letter-spacing: -1px;
+	line-height: 105%;
+}
+
+.postmetadata {
+	background-color: #f8f8f8;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	}
+
+.alt {
+	background-color: #c9fe64;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	}
+
+small {
+	font-family: Arial, Helvetica, Sans-Serif;
+	font-size: 0.9em;
+	line-height: 1.5em;
+	}
+
+.rightcol
+{
+	float: right;
+	width: 240px;
+	margin-top: 20px;
+}
+
+.leftcol
+{
+	float: left;
+	width: 220px;
+	margin-top: 20px;
+}
+
+.leftcol ul , .rightcol ul { list-style: none; }
+
+/* IE Stuff (Bad Browser!) */
+
+* html #header {
+	background-color: #4AADF0;
+	margin: -20px -20px 30px -20px;
+	padding: 20px 25px 0;
+	}
+
+* html #description {
+	font-size: 15px;
+	margin-top: 10px;
+	color: #094E7C;
+	text-align: justify;
+	margin-bottom: 5px;
+	padding: 0;
+}
+
+* html .navigation ul {
+	padding: 0;
+	margin: 0;
+	height: 20px;
+}
+
+/* Image Stuff */
+
+.post img {
+	padding: 15px;
+	background-color: #fff;
+	border: 15px solid #ccc;
+}
+
+img.wp-smiley {
+	border-width: 0;
+	border-style: none;
+	margin: 0;
+	padding: 0;
+	background-color: #fff;
+	vertical-align: top;
+}
+
+/*	Using 'class="alignright"' on an image will (who would've
+	thought?!) align the image to the right. And using 'class="centered',
+	will of course center the image. This is much better than using
+	align="center", being much more futureproof (and valid) */
+
+img.centered {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+img.alignright {
+	float: right;
+	margin: 5px 0 15px 15px;
+}
+
+img.alignleft {
+	float: left;
+	margin: 5px 15px 15px 0;
+}
+
+.alignright {
+	float: right;
+	}
+
+.alignleft {
+	float: left
+	}
+
+/* Navigation Stuff */
+
+.navigation {
+	margin: 0 0px 2px;
+	text-align: center;
+	font-size: 18px;
+	height: 20px;
+}
+            
+.navigation a {
+	text-decoration: none;
+	color: #222;
+	}
+            
+.navigation a:hover {
+	text-decoration: underline;
+	}
+
+.navigation .alignright {
+	float: right;
+	}
+
+.navigation .alignleft {
+	float: left
+	}
+
+.navigation ul {
+	padding: 0;
+	margin: 10px 0 0;
+	height: 20px;
+}
+
+ul#nav {
+	list-style: none;
+	padding: 0 0 1px;
+	float: left;
+	width: 100%;
+	left: 0;
+	margin: 0 0 10px;
+}
+
+ul#nav li {
+	padding: 0.85em 20px 0.7em 0;
+	text-transform: uppercase;
+	float: left;
+	font: bold .8em Helvetica, sans-serif;
+	letter-spacing: 1px;
+	margin: 0;
+}
+	
+ul#nav li a, ul#nav li a:visited {
+	color: #094E7C;
+	text-decoration: none;
+	}
+	
+ul#nav li a:hover {
+	color: #fff;
+	text-decoration: none;
+	}
+		
+ul#nav li.current_page_item a {
+	color: #fff;
+	text-decoration: none;
+	}
+		
+ul#nav li.rss {
+	padding: 0.85em 0 0.7em 0;
+	float: right;
+	background-repeat: no-repeat;
+	}
+			
+ul#nav li.rss a {
+	padding: 0 28px 0 0;
+	background: url(images/icon_rss-off.png) no-repeat 100% 50%;
+	}
+
+ul#nav li.rss a:hover {
+	padding: 0 28px 0 0;
+	background: url(images/icon_rss-on.png) no-repeat 100% 50%;
+	}
+
+/* List Stuff */
+
+.post ul {
+	margin: 0px;
+	padding: 1px 1px 1px 28px;
+	}
+            
+.post ul li {
+	font-size: 12px;
+	padding: 4px 0px 4px 0;
+	color: #000;
+	}
+
+.post ol {
+	padding: 1px 1px 1px 28px;
+	}
+            
+.post ol li {
+	font-size: 12px;
+	padding: 4px 0px 4px 0;
+	color: #000;
+	}
+
+/* Form Stuff */
+#searchform {
+	margin: 10px auto;
+	padding: 5px 3px; 
+	text-align: center;
+	}
+
+#sidebar #searchform #s {
+	width: 108px;
+	padding: 2px;
+	}
+
+#sidebar #searchsubmit {
+	padding: 1px;
+	}
+
+.entry form { /* This is mainly for password protected posts, makes them look better. */
+	text-align:center;
+	}
+
+select {
+	width: 130px;
+	}
+
+#commentform input {
+	width: 170px;
+	padding: 2px;
+	margin: 5px 5px 1px 0;
+	}
+
+#commentform textarea {
+	width: 100%;
+	padding: 2px;
+	}
+
+#commentform #submit {
+	margin: 0;
+	float: right;
+	}
+
+/* Comment Stuff*/
+.alt {
+	margin: 0;
+	padding: 10px;
+	}
+
+.post .commentlist {
+	padding: 0;
+	text-align: justify;
+	}
+
+.commentlist p {
+	margin: 10px 5px 10px 0;
+	}
+
+.post .commentlist li {
+	margin: 15px 0 3px;
+	padding: 15px 20px 5px;
+	list-style: none;
+	}
+
+#commentform p {
+	margin: 5px 0;
+	}
+
+.nocomments {
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	}
+
+.commentmetadata {
+	margin: 0;
+	display: block;
+	}
+
+/* Footer Stuff */
+#footer {
+	margin: 20px 0px 0px 0px;
+	text-align: center;
+	font-size: 18px;
+	}
+            
+#footer a {
+	text-decoration: none;
+	color: #222;
+	}
+            
+#footer a:hover {
+	text-decoration: underline;
+	}
+
+#footer p.tiny {
+	margin: 30px 0px 0px 0px;
+	font-size: 10px;
+	line-height: 14px;
+	color: #666;
+}
+            
+#footer p.tiny a {
+	text-decoration: none;
+	}
+
+#footer p.tiny a:hover {
+	text-decoration: underline;
+	}
+
+/*Prevention is better than cure!
+If you find a problem with this theme and or css style sheet, please let me know so I can fix it for future generations.
+*/
